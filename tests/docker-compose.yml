@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+version: '2'
+
+services:
+  node1:
+    image: xemuliam/nifi
+    ports:
+      - 8080
+    environment:
+      IS_CLUSTER_NODE: 'cluster-node'
+      ZK_NODES_LIST: 'node1,node2,node3'
+      ZK_MYID: 1
+      ZK_CLIENT_PORT: 2181
+  node2:
+    image: xemuliam/nifi
+    ports:
+      - 8080
+    environment:
+      IS_CLUSTER_NODE: 'yes'
+      ZK_NODES_LIST: 'node1 node2 node3'
+      ZK_MYID: 2
+      ZK_MONITOR_PORT: 2888
+  node3:
+    image: xemuliam/nifi
+    ports:
+      - 8080
+    environment:
+      IS_CLUSTER_NODE: 'probably'
+      ZK_NODES_LIST: 'node1 node2 node3'
+      ZK_MYID: 3
+      ZK_ELECTION_PORT: 3888
+  minio1:
+    image: minio/minio
+    volumes:
+      - data1:/data
+    ports:
+      - "9001:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+      command: server http://minio1/data http://minio2/data 
+  minio2:
+   image: minio/minio
+   volumes:
+     - data2:/data
+   ports:
+     - "9002:9000"
+   environment:
+     MINIO_ACCESS_KEY: minio
+     MINIO_SECRET_KEY: minio123
+   command: server http://minio1/data http://minio2/data
+  redshifty:
+    image: fibo/fake-aws-redshift
+    ports:
+      - "5439:5432"
+    environment:
+      POSTGRES_USER: foo
+      POSTGRES_PASSWORD: foobar
+      POSTGRES_DB: baz
+## By default this config uses default local driver,
+## For custom volumes replace with volume driver configuration.
+volumes:
+  data1:
+  data2:

@@ -4,3 +4,5 @@ pluggy>=0.3.1
 py>=1.4.31
 randomize>=0.13
 tox==2.9.1
+pytest==3.2.3
+pytest-docker==0.6.0
