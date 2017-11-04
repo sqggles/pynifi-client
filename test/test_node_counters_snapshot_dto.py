@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.node_counters_snapshot_dto import NodeCountersSnapshotDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.node_counters_snapshot_dto import NodeCountersSnapshotDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestNodeCountersSnapshotDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestNodeCountersSnapshotDTO(unittest.TestCase):
     def testNodeCountersSnapshotDTO(self):
         """Test NodeCountersSnapshotDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.node_counters_snapshot_dto.NodeCountersSnapshotDTO()  # noqa: E501
+        # model = pynifi_client.models.node_counters_snapshot_dto.NodeCountersSnapshotDTO()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.node_remote_process_group_status_snapshot_dto import NodeRemoteProcessGroupStatusSnapshotDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.node_remote_process_group_status_snapshot_dto import NodeRemoteProcessGroupStatusSnapshotDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestNodeRemoteProcessGroupStatusSnapshotDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestNodeRemoteProcessGroupStatusSnapshotDTO(unittest.TestCase):
     def testNodeRemoteProcessGroupStatusSnapshotDTO(self):
         """Test NodeRemoteProcessGroupStatusSnapshotDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.node_remote_process_group_status_snapshot_dto.NodeRemoteProcessGroupStatusSnapshotDTO()  # noqa: E501
+        # model = pynifi_client.models.node_remote_process_group_status_snapshot_dto.NodeRemoteProcessGroupStatusSnapshotDTO()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.update_controller_service_reference_request_entity import UpdateControllerServiceReferenceRequestEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.update_controller_service_reference_request_entity import UpdateControllerServiceReferenceRequestEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestUpdateControllerServiceReferenceRequestEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestUpdateControllerServiceReferenceRequestEntity(unittest.TestCase):
     def testUpdateControllerServiceReferenceRequestEntity(self):
         """Test UpdateControllerServiceReferenceRequestEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.update_controller_service_reference_request_entity.UpdateControllerServiceReferenceRequestEntity()  # noqa: E501
+        # model = pynifi_client.models.update_controller_service_reference_request_entity.UpdateControllerServiceReferenceRequestEntity()  # noqa: E501
         pass
 
 

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.variable_registry_update_step_dto import VariableRegistryUpdateStepDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.variable_registry_update_step_dto import VariableRegistryUpdateStepDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestVariableRegistryUpdateStepDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestVariableRegistryUpdateStepDTO(unittest.TestCase):
     def testVariableRegistryUpdateStepDTO(self):
         """Test VariableRegistryUpdateStepDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.variable_registry_update_step_dto.VariableRegistryUpdateStepDTO()  # noqa: E501
+        # model = pynifi_client.models.variable_registry_update_step_dto.VariableRegistryUpdateStepDTO()  # noqa: E501
         pass
 
 

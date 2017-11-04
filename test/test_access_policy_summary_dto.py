@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.access_policy_summary_dto import AccessPolicySummaryDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.access_policy_summary_dto import AccessPolicySummaryDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestAccessPolicySummaryDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAccessPolicySummaryDTO(unittest.TestCase):
     def testAccessPolicySummaryDTO(self):
         """Test AccessPolicySummaryDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.access_policy_summary_dto.AccessPolicySummaryDTO()  # noqa: E501
+        # model = pynifi_client.models.access_policy_summary_dto.AccessPolicySummaryDTO()  # noqa: E501
         pass
 
 

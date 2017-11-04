@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.history_entity import HistoryEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.history_entity import HistoryEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestHistoryEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestHistoryEntity(unittest.TestCase):
     def testHistoryEntity(self):
         """Test HistoryEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.history_entity.HistoryEntity()  # noqa: E501
+        # model = pynifi_client.models.history_entity.HistoryEntity()  # noqa: E501
         pass
 
 

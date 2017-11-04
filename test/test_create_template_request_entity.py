@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.create_template_request_entity import CreateTemplateRequestEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.create_template_request_entity import CreateTemplateRequestEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestCreateTemplateRequestEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCreateTemplateRequestEntity(unittest.TestCase):
     def testCreateTemplateRequestEntity(self):
         """Test CreateTemplateRequestEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.create_template_request_entity.CreateTemplateRequestEntity()  # noqa: E501
+        # model = pynifi_client.models.create_template_request_entity.CreateTemplateRequestEntity()  # noqa: E501
         pass
 
 

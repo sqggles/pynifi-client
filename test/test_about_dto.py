@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.about_dto import AboutDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.about_dto import AboutDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestAboutDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAboutDTO(unittest.TestCase):
     def testAboutDTO(self):
         """Test AboutDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.about_dto.AboutDTO()  # noqa: E501
+        # model = pynifi_client.models.about_dto.AboutDTO()  # noqa: E501
         pass
 
 

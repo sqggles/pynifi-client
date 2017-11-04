@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.search_results_dto import SearchResultsDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.search_results_dto import SearchResultsDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestSearchResultsDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestSearchResultsDTO(unittest.TestCase):
     def testSearchResultsDTO(self):
         """Test SearchResultsDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.search_results_dto.SearchResultsDTO()  # noqa: E501
+        # model = pynifi_client.models.search_results_dto.SearchResultsDTO()  # noqa: E501
         pass
 
 

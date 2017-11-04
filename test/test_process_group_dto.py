@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.process_group_dto import ProcessGroupDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.process_group_dto import ProcessGroupDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestProcessGroupDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProcessGroupDTO(unittest.TestCase):
     def testProcessGroupDTO(self):
         """Test ProcessGroupDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.process_group_dto.ProcessGroupDTO()  # noqa: E501
+        # model = pynifi_client.models.process_group_dto.ProcessGroupDTO()  # noqa: E501
         pass
 
 

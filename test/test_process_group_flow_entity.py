@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.process_group_flow_entity import ProcessGroupFlowEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.process_group_flow_entity import ProcessGroupFlowEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestProcessGroupFlowEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestProcessGroupFlowEntity(unittest.TestCase):
     def testProcessGroupFlowEntity(self):
         """Test ProcessGroupFlowEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.process_group_flow_entity.ProcessGroupFlowEntity()  # noqa: E501
+        # model = pynifi_client.models.process_group_flow_entity.ProcessGroupFlowEntity()  # noqa: E501
         pass
 
 

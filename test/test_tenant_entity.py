@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.tenant_entity import TenantEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.tenant_entity import TenantEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestTenantEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestTenantEntity(unittest.TestCase):
     def testTenantEntity(self):
         """Test TenantEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.tenant_entity.TenantEntity()  # noqa: E501
+        # model = pynifi_client.models.tenant_entity.TenantEntity()  # noqa: E501
         pass
 
 

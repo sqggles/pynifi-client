@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.remote_process_group_status_entity import RemoteProcessGroupStatusEntity  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.remote_process_group_status_entity import RemoteProcessGroupStatusEntity  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestRemoteProcessGroupStatusEntity(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestRemoteProcessGroupStatusEntity(unittest.TestCase):
     def testRemoteProcessGroupStatusEntity(self):
         """Test RemoteProcessGroupStatusEntity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.remote_process_group_status_entity.RemoteProcessGroupStatusEntity()  # noqa: E501
+        # model = pynifi_client.models.remote_process_group_status_entity.RemoteProcessGroupStatusEntity()  # noqa: E501
         pass
 
 

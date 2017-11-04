@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.policies_api import PoliciesApi  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.api.policies_api import PoliciesApi  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestPoliciesApi(unittest.TestCase):
     """PoliciesApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.policies_api.PoliciesApi()  # noqa: E501
+        self.api = pynifi_client.api.policies_api.PoliciesApi()  # noqa: E501
 
     def tearDown(self):
         pass

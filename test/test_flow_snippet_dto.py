@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.flow_snippet_dto import FlowSnippetDTO  # noqa: E501
-from swagger_client.rest import ApiException
+import pynifi_client
+from pynifi_client.models.flow_snippet_dto import FlowSnippetDTO  # noqa: E501
+from pynifi_client.rest import ApiException
 
 
 class TestFlowSnippetDTO(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestFlowSnippetDTO(unittest.TestCase):
     def testFlowSnippetDTO(self):
         """Test FlowSnippetDTO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.flow_snippet_dto.FlowSnippetDTO()  # noqa: E501
+        # model = pynifi_client.models.flow_snippet_dto.FlowSnippetDTO()  # noqa: E501
         pass
 
 
